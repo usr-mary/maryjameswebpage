@@ -1,0 +1,134 @@
+#content_container
+{
+    width: 96%; height: 88%;
+
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(28, 26, 26, 0.125);
+    padding: 1%;
+    margin-top: 1.25%;
+
+    border: solid 1px rgba(12, 12, 12, 0.125);
+    /* border-radius: 12; */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vh;
+
+    overflow-y: scroll;
+    border-radius: 24px;
+}
+
+.content_item
+{
+    all: revert;
+    width: 100%; height: 42%;
+
+    background-color: #00000000;
+    transition: background-color 0.25s linear;
+    border-radius: 24px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 1.5vh;
+}
+.content_item:hover
+{
+    background-color: rgba(26, 26, 26, 0.48);
+    transition: background-color 0.25s linear;
+}
+
+.content_item b
+{
+    font-size: larger;
+    color: #F4F4F4;
+}
+
+.image_container
+{
+    all: revert;
+    height: 100%; aspect-ratio: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_container > img
+{
+    all: revert;
+    height: 90%;
+
+    border-radius: 16px;
+}
+
+.uitext_container
+{
+    all: revert;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.uitext_container > h
+{
+    all: revert;
+    flex: 6;
+
+    font-weight: 250;
+    font-size: var(--large_font);
+    color: #FCD8D8;
+}
+
+.uitext_container > a
+{
+    all: revert;
+    width: fit-content;
+    flex: 1;
+    text-decoration: none;
+
+    font-weight: 300;
+    font-size: var(--medium_font);
+    font-style: italic;
+    color: #FCD8D8;
+    transition: color 0.25s cubic-bezier(.2,.56,.6,.87);
+}
+.uitext_container > a:hover
+{
+    color: #F5ACB2;
+    transition: color 0.25s cubic-bezier(.2,.56,.6,.87);
+}
+
+#filter
+{
+    position: absolute;
+    width: 96%; height: 4%;
+    margin-top: 0.625%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    /* gap: -4%; */
+}
+
+.filter_button
+{
+    background-color: #3E3434;
+    color: #F4F4F4;
+    transition: background-color 0.5s cubic-bezier(.2,.56,.6,.87);
+    width: auto; height: auto;
+    padding: 6px;
+    border-radius: 6px;
+}
+.filter_button:hover
+{
+    background-color: #533F3F;
+    transition: background-color 0.5s cubic-bezier(.2,.56,.6,.87);
+}

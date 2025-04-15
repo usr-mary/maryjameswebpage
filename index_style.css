@@ -1,0 +1,30 @@
+
+/* Here's where most of the functional UI and graphical will go */
+
+#content_container
+{
+    min-width: 40ch; max-width: 80ch;
+    height: auto;
+
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    text-align: center;
+}
+
+#content_container > div
+{
+    all: revert;
+    height: auto; width: 100%;
+
+    text-align: center;
+
+    color: #F1F1F1;
+    text-align: center;
+    font-size: --var(--small_font);
+}
